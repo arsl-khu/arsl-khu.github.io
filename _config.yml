@@ -1,0 +1,15 @@
+url: "https://arsl-khu.github.io" #"http://localhost:4000"
+baseurl: "" # the subpath of your site, e.g. /blog
+
+title: "Agile Robotics and Systems Lab"
+tagline: "Kyung Hee University"
+description: "Agile Robotics and Systems Lab (ARSL) at Kyung Hee University."
+location: "Kyung Hee University, Yongin, Republic of Korea"
+email: "dongjaelee@khu.ac.kr"
+
+last-updated: May 7, 2026
+
+include:
+  - _posts
+  - files
+  - img

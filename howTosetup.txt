@@ -1,0 +1,19 @@
+sudo apt-get update
+sudo apt-get install ruby ruby-dev make build-essential
+
+sudo vim ~/.bashrc
+	export GEM_HOME=$HOME/gems
+	export PATH=$HOME/gems/bin:$PATH
+source ~/.bashrc
+
+# rvm download for ruby version upgrade
+https://github.com/rvm/ubuntu_rvm
+
+# jekyll을 설치하기 위해 gem 사용
+gem install jekyll bundler
+
+# gem source를 gemfile에 업로드
+bundle install
+
+# local PC에 있는 repository에서 다음과 같이 실행하면 localhost 실행
+bundle exec jekyll serve

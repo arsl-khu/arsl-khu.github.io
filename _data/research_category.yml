@@ -1,0 +1,35 @@
+- title: "Mobile Manipulation"
+  description: "Towards dexterous aerial/mobile manipulation with guranteed stability/performance"
+  image: "gif/2024IJRR_omnimani_4X_cprsed.gif"
+  slug: mobile_manipulation
+
+- title: "New Aerial Platform"
+  description: "Multirotors with additional DoFs for enhancing dexterity and applicability"
+  image: "img/2024icra.png"
+  slug: new_aerial_platform
+
+- title: "Robot Learning"
+  description: "Embodiment-aware learning for robot control"
+  image: "gif/2026icra_umionair_8X.gif"
+  slug: robot_learning
+
+- title: "Multi-Agent System"
+  description: "Cooperative control for multi-robot system"
+  image: "img/kth_simul_video_v2.gif"
+  slug: multi_agent_system
+
+- title: "Safety-Critical Control"
+  description: "How to ensure safety in the presence of disturbance or multiple constraints"
+  image: "img/2026ral_lim.png"
+  slug: safety_critical_control
+
+- title: "Robust/Adaptive Control"
+  description: "How to make a robot be robust/adaptive to disturbance and unceratinty"
+  image: "img/2022lcss.jpg"
+  slug: robust_adaptive_control
+
+- title: "Robotic System Integration"
+  description: "Perception, planning and hardware experiments for excavator automation"
+  image: "img/2024ram.png"
+  slug: robotic_system_integration
+

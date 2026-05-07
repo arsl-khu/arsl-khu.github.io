@@ -1,0 +1,142 @@
+{% assign selected_titles = include.selected_papers %}
+{% assign publications = site.data.publications %}
+
+{% assign filtered_publications = "" | split: "," %}
+
+{% for publist in publications %}
+{% for pub in publist.publications %}
+{% if selected_titles == nil or selected_titles.size == 0 or (selected_titles contains pub.title) %}
+  {% assign venue = "" %}
+  {% if pub.journal and pub.journal.name %}
+    {% assign venue = pub.journal.name %}
+  {% elsif pub.conference and pub.conference.name %}
+    {% assign venue = pub.conference.name %}
+  {% endif %}
+
+  {% assign pub_region = "" %}
+  {% if pub.region %}
+    {% assign pub_region = pub.region %}
+  {% else %}
+    {% if venue contains "Korea" or venue contains "Korean" or venue contains "대한" or venue contains "한국" %}
+      {% assign pub_region = "domestic" %}
+    {% else %}
+      {% assign pub_region = "international" %}
+    {% endif %}
+  {% endif %}
+
+  {% if pub_region == "international" %}
+    {% assign filtered_publications = filtered_publications | push: pub %}
+  {% endif %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+{% if filtered_publications.size > 0 %}
+<ol class="pub-list js-pub-sort">
+{% for pub in filtered_publications %}
+{% assign pub_year = "" %}
+{% if pub.journal and pub.journal.date %}
+{% assign date_parts = pub.journal.date | split: " " %}
+{% for part in date_parts %}
+{% assign part_num = part | plus: 0 %}
+{% if part_num > 1900 and part_num < 2100 %}
+{% assign pub_year = part %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% elsif pub.conference and pub.conference.name %}
+{% assign conf_parts = pub.conference.name | split: " " %}
+{% assign maybe_year = conf_parts[0] | plus: 0 %}
+{% if maybe_year > 1900 and maybe_year < 2100 %}
+{% assign pub_year = conf_parts[0] %}
+{% endif %}
+{% endif %}
+
+<li class="pub-item{% if pub.is_first_author %} pub-item--highlight{% endif %}" data-year="{{ pub_year }}">
+{% if pub.image %}
+<button class="pub-thumb" type="button" onclick="openModal('{{ pub.image }}')">
+<img src="{{ pub.image }}" alt="{{ pub.title }}">
+</button>
+{% endif %}
+
+<div class="pub-main">
+<div class="pub-title">
+{% if pub.post %}
+<a href="{{ pub.post }}">{{ pub.title }}</a>
+{% else %}
+{{ pub.title }}
+{% endif %}
+</div>
+
+<div class="pub-authors">
+{% for author in pub.authors %}
+{% if forloop.length == 1 %}
+{% if author contains "D. Lee" or author contains "Dongjae Lee" %}
+<span class="pub-author-self">{{ author }}</span>
+{% else %}
+{{ author }}
+{% endif %}
+{% else %}
+{% if forloop.last %}
+and
+{% if author contains "D. Lee" or author contains "Dongjae Lee" %}
+<span class="pub-author-self">{{ author }}</span>
+{% else %}
+{{ author }}
+{% endif %}
+{% else %}
+{% if author contains "D. Lee" or author contains "Dongjae Lee" %}
+<span class="pub-author-self">{{ author }}</span>,
+{% else %}
+{{ author }},
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>
+
+<div class="pub-venue">
+{% if pub.journal %}
+<em>
+{{ pub.journal.name }}{% if pub.journal.abrv %} ({{ pub.journal.abrv }}){% endif %}{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+</em>
+{% elsif pub.conference %}
+<em>
+In {{ pub.conference.name }}{% if pub.conference.abrv %} ({{ pub.conference.abrv }}){% endif %}{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+</em>
+{% elsif pub.default and pub.default.remark %}
+<em>{{ pub.default.remark }}{% if pub_year != "" %}, {{ pub_year }}{% endif %}</em>
+{% endif %}
+</div>
+
+{% if pub.award %}
+<div class="pub-award">{{ pub.award }}</div>
+{% endif %}
+
+{% if pub.links %}
+<div class="pub-links">
+{% for link in pub.links %}
+<a href="{{ link.link }}">{{ link.name }}</a>{% unless forloop.last %}<span class="pub-link-sep">·</span>{% endunless %}
+{% endfor %}
+</div>
+{% endif %}
+</div>
+</li>
+{% endfor %}
+</ol>
+
+<script>
+(function () {
+  var list = document.querySelector('.js-pub-sort');
+  if (!list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('li[data-year]'));
+  items.sort(function (a, b) {
+    var ay = parseInt(a.getAttribute('data-year') || '0', 10) || 0;
+    var by = parseInt(b.getAttribute('data-year') || '0', 10) || 0;
+    return by - ay;
+  });
+  items.forEach(function (li) { list.appendChild(li); });
+})();
+</script>
+{% endif %}
+

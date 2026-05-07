@@ -1,0 +1,45 @@
+- group: pi
+  group_label: "Principal Investigator"
+  members:
+    - name: "Dongjae Lee"
+      role: "Assistant Professor"
+      affiliation: "Mechanical Engineering, Kyung Hee University"
+      research_interest: ""
+      image: "/img/dongjae_kth.png" # TODO: replace
+      website: "https://dongjaelee95.github.io"
+      email: ""
+      links: []
+      blurb: ""
+
+- group: phd
+  group_label: "Ph.D. Students"
+  members:
+    # - name: "Name"
+    #   affiliation: "Mechanical Engineering, Kyung Hee University"
+    #   research_interest: "Research interests: TODO"
+    #   image: "" # optional
+    #   email: ""
+    #   links: []
+    #   blurb: ""
+
+- group: ms
+  group_label: "Master Students"
+  members:
+    # - name: "Name"
+    #   affiliation: "Mechanical Engineering, Kyung Hee University"
+    #   research_interest: "Research interests: TODO"
+    #   image: ""
+    #   email: ""
+    #   links: []
+    #   blurb: ""
+
+- group: ug
+  group_label: "Undergrads"
+  members:
+    # - name: "Name"
+    #   affiliation: "Mechanical Engineering, Kyung Hee University"
+    #   research_interest: "Research interests: TODO"
+    #   image: ""
+    #   email: ""
+    #   links: []
+    #   blurb: ""

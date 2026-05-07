@@ -1,0 +1,119 @@
+{% assign selected_papers = include.selected_papers %}
+
+{% comment %}
+  DAIR-like minimal typography, but keeps optional thumbnails.
+  Expects `publications` assigned in the calling page.
+{% endcomment %}
+
+{% for publist in publications %}
+{% assign filtered_publications = "" | split: "," %}
+{% for pub in publist.publications %}
+{% if selected_papers.size == 0 %}
+{% assign filtered_publications = filtered_publications | push: pub %}
+{% else %}
+{% if selected_papers contains pub.title %}
+{% assign filtered_publications = filtered_publications | push: pub %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if filtered_publications.size > 0 %}
+<h3 class="pub-section-title">{{ publist.title }}</h3>
+
+<ol class="pub-list">
+{% for pub in filtered_publications %}
+{% comment %} derive year if possible {% endcomment %}
+{% assign pub_year = "" %}
+{% if pub.journal and pub.journal.date %}
+{% assign date_parts = pub.journal.date | split: " " %}
+{% for part in date_parts %}
+{% assign part_num = part | plus: 0 %}
+{% if part_num > 1900 and part_num < 2100 %}
+{% assign pub_year = part %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% elsif pub.conference and pub.conference.name %}
+{% assign conf_parts = pub.conference.name | split: " " %}
+{% assign maybe_year = conf_parts[0] | plus: 0 %}
+{% if maybe_year > 1900 and maybe_year < 2100 %}
+{% assign pub_year = conf_parts[0] %}
+{% endif %}
+{% endif %}
+
+<li class="pub-item{% if pub.is_first_author %} pub-item--highlight{% endif %}">
+{% if pub.image %}
+<button class="pub-thumb" type="button" onclick="openModal('{{ pub.image }}')">
+<img src="{{ pub.image }}" alt="{{ pub.title }}">
+</button>
+{% endif %}
+
+<div class="pub-main">
+<div class="pub-title">
+{% if pub.post %}
+<a href="{{ pub.post }}">{{ pub.title }}</a>
+{% else %}
+{{ pub.title }}
+{% endif %}
+</div>
+
+<div class="pub-authors">
+{% for author in pub.authors %}
+{% if forloop.length == 1 %}
+{% if author contains "D. Lee" or author contains "Dongjae Lee" %}
+<span class="pub-author-self">{{ author }}</span>
+{% else %}
+{{ author }}
+{% endif %}
+{% else %}
+{% if forloop.last %}
+and
+{% if author contains "D. Lee" or author contains "Dongjae Lee" %}
+<span class="pub-author-self">{{ author }}</span>
+{% else %}
+{{ author }}
+{% endif %}
+{% else %}
+{% if author contains "D. Lee" or author contains "Dongjae Lee" %}
+<span class="pub-author-self">{{ author }}</span>,
+{% else %}
+{{ author }},
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>
+
+<div class="pub-venue">
+{% if pub.journal %}
+<em>
+{{ pub.journal.name }}{% if pub.journal.abrv %} ({{ pub.journal.abrv }}){% endif %}{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+</em>
+{% if pub.journal.remark %}<span class="pub-remark"> — {{ pub.journal.remark }}</span>{% endif %}
+{% elsif pub.conference %}
+<em>
+In {{ pub.conference.name }}{% if pub.conference.abrv %} ({{ pub.conference.abrv }}){% endif %}{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+</em>
+{% if pub.conference.remark %}<span class="pub-remark"> — {{ pub.conference.remark }}</span>{% endif %}
+{% elsif pub.default and pub.default.remark %}
+<em>{{ pub.default.remark }}</em>{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+{% endif %}
+</div>
+
+{% if pub.award %}
+<div class="pub-award">{{ pub.award }}</div>
+{% endif %}
+
+{% if pub.links %}
+<div class="pub-links">
+{% for link in pub.links %}
+<a href="{{ link.link }}">{{ link.name }}</a>{% unless forloop.last %}<span class="pub-link-sep">·</span>{% endunless %}
+{% endfor %}
+</div>
+{% endif %}
+</div>
+</li>
+{% endfor %}
+</ol>
+{% endif %}
+{% endfor %}
