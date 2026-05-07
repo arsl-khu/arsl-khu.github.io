@@ -58,6 +58,7 @@ title: Research
     color: inherit;
     word-wrap: break-word;
     word-break: break-word;
+    font-family: 'Noto Sans KR', 'Inter', sans-serif;
 }
 
 .text-container h3 {

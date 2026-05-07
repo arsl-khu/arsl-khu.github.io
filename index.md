@@ -26,7 +26,7 @@ title: Home
   </p>
 </div>
 
-## Main research themes
+<!-- ## Main research themes
 <div class="grid grid-3">
   {% for category in site.data.research_category limit:6 %}
   <a class="tile" href="{{ '/research/' | append: category.slug | relative_url }}">
@@ -34,7 +34,7 @@ title: Home
     <p class="muted" style="margin:0;">{{ category.description }}</p>
   </a>
   {% endfor %}
-</div>
+</div> -->
 
 ## Research highlight
 <div class="highlight-grid">

@@ -15,7 +15,7 @@
 
 - title: "Multi-Agent System"
   description: "Cooperative control for multi-robot system"
-  image: "img/kth_simul_video_v2.gif"
+  image: "gif/2025KTH_switching.gif"
   slug: multi_agent_system
 
 - title: "Safety-Critical Control"
