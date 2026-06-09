@@ -95,8 +95,10 @@ and
 In {{ pub.conference.name }}{% if pub.conference.abrv %} ({{ pub.conference.abrv }}){% endif %}{% if pub_year != "" %}, {{ pub_year }}{% endif %}
 </em>
 {% if pub.conference.remark %}<span class="pub-remark"> — {{ pub.conference.remark }}</span>{% endif %}
-{% elsif pub.default and pub.default.remark %}
+{% elsif pub.default %}
+{% if pub.default.remark and pub.default.remark != "" %}
 <em>{{ pub.default.remark }}</em>{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+{% endif %}
 {% endif %}
 </div>
 

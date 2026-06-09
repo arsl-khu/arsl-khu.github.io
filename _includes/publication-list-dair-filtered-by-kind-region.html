@@ -11,9 +11,14 @@
 {% assign is_kind_match = true %}
 {% elsif kind == "conference" and pub.conference %}
 {% assign is_kind_match = true %}
+{% elsif kind == "preprint" and publist.classname == "p" %}
+{% assign is_kind_match = true %}
 {% endif %}
 
 {% if is_kind_match %}
+  {% if kind == "preprint" %}
+    {% assign filtered_publications = filtered_publications | push: pub %}
+  {% else %}
   {% assign venue = "" %}
   {% if pub.journal and pub.journal.name %}
     {% assign venue = pub.journal.name %}
@@ -34,6 +39,7 @@
 
   {% if pub_region == region %}
     {% assign filtered_publications = filtered_publications | push: pub %}
+  {% endif %}
   {% endif %}
 {% endif %}
 {% endfor %}
@@ -112,6 +118,11 @@ and
 <em>
 In {{ pub.conference.name }}{% if pub.conference.abrv %} ({{ pub.conference.abrv }}){% endif %}{% if pub_year != "" %}, {{ pub_year }}{% endif %}
 </em>
+{% if pub.conference.remark %}<span class="pub-remark"> — {{ pub.conference.remark }}</span>{% endif %}
+{% elsif pub.default %}
+{% if pub.default.remark and pub.default.remark != "" %}
+<em>{{ pub.default.remark }}</em>{% if pub_year != "" %}, {{ pub_year }}{% endif %}
+{% endif %}
 {% endif %}
 </div>
 

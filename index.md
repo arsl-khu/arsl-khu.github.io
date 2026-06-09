@@ -64,6 +64,7 @@ title: Home
 
 ## Recent news
 <ul class="news-list">
+  <li><span class="news-date">[Jun. 2026]</span> Our <a href="https://arxiv.org/abs/2508.19608">paper</a> featured on the cover of <a href="https://journals.sagepub.com/toc/ijra/45/7">IJRR</a>.</li>
   <li><span class="news-date">[May. 2026]</span> The ARSL website officially started.</li>
 </ul>
 

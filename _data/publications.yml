@@ -1,5 +1,5 @@
-- title: Manuscripts under review / in preparation
-  classname: m
+- title: Preprints
+  classname: p
   publications:
 
     - title: Aerial physical interaction with robust stability guarantee against sudden collision and contact‑loss
@@ -9,11 +9,11 @@
         - D. Lee
         - J. Byun
         - H. J. Kim
-      default:
-        remark: under review (journal submission)
+      # default:
+      #   remark: preprint
       links:
         - name: Paper
-          link: files/2024TROrevision.pdf
+          link: files/2024preprint_hybrid.pdf
         - name: Video
           link: https://youtu.be/t0-__4vfCNQ
 
@@ -54,6 +54,8 @@
       links:
         - name: Paper 
           link: https://ieeexplore.ieee.org/document/11359671
+        - name: Video
+          link: https://youtu.be/q97SMjJk61Q?si=GtDypn1BbucTLDaU
 
     - title: Autonomous aerial manipulation at Arbitrary Pose in SE(3) with Robust Control and Whole-body Planning
       image: "/gif/2024IJRR_omnimani_4X_cprsed.gif"
@@ -65,8 +67,9 @@
       journal:
         name: The International Journal of Robotics Research
         abrv: IJRR
-        date: 2025
+        date: 2026
         remark: accepted
+      award: Featured on the cover of IJRR
       links:
         - name: Paper 
           link: https://arxiv.org/abs/2508.19608
@@ -316,8 +319,8 @@
       links:
         - name: Paper 
           link: https://arxiv.org/abs/2510.01675
-        # - name: Video
-        #   link: https://youtu.be/UIv5V7vYpFw?si=V9u56Y7lhy3x_XqU
+        - name: Video
+          link: https://youtu.be/UkbLBKfqp3Y?si=VR16TgX1rFQm4UiO
 
     - title: Safety-Critical Control for Aerial Physical Interaction in Uncertain Environment
       is_first_author: false
