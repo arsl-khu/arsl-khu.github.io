@@ -5,7 +5,7 @@
 
 - title: "New Aerial Platform"
   description: "Multirotors with additional DoFs for enhancing dexterity and applicability"
-  image: "img/2024icra.png"
+  image: "img_research/2024icra.png"
   slug: new_aerial_platform
 
 - title: "Robot Learning"
@@ -20,16 +20,16 @@
 
 - title: "Safety-Critical Control"
   description: "How to ensure safety in the presence of disturbance or multiple constraints"
-  image: "img/2026ral_lim.png"
+  image: "img_research/2026ral_lim.png"
   slug: safety_critical_control
 
 - title: "Robust/Adaptive Control"
   description: "How to make a robot be robust/adaptive to disturbance and unceratinty"
-  image: "img/2022lcss.jpg"
+  image: "img_research/2022lcss.jpg"
   slug: robust_adaptive_control
 
 - title: "Robotic System Integration"
   description: "Perception, planning and hardware experiments for excavator automation"
-  image: "img/2024ram.png"
+  image: "img_research/2024ram.png"
   slug: robotic_system_integration
 
