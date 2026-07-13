@@ -1,45 +1,35 @@
 - group: pi
-  group_label: "Principal Investigator"
+  group_label: "Faculty"
   members:
     - name: "Dongjae Lee"
       role: "Assistant Professor"
-      affiliation: "Mechanical Engineering, Kyung Hee University"
-      research_interest: ""
+      affiliation: "MechE"
       image: "/img_people/dongjae.jpg" # TODO: replace
       website: "https://dongjaelee95.github.io"
-      email: ""
-      links: []
-      blurb: ""
+      email: "dongjaelee@khu.ac.kr"
 
 - group: phd
   group_label: "Ph.D. Students"
   members:
     # - name: "Name"
-    #   affiliation: "Mechanical Engineering, Kyung Hee University"
-    #   research_interest: "Research interests: TODO"
+    #   affiliation: "MechE, KHU"
     #   image: "" # optional
+    #   website: ""
     #   email: ""
-    #   links: []
-    #   blurb: ""
 
 - group: ms
   group_label: "Master Students"
   members:
     # - name: "Name"
-    #   affiliation: "Mechanical Engineering, Kyung Hee University"
-    #   research_interest: "Research interests: TODO"
+    #   affiliation: "MechE, KHU"
     #   image: ""
+    #   website: ""
     #   email: ""
-    #   links: []
-    #   blurb: ""
 
 - group: ug
   group_label: "Undergrads"
   members:
-    # - name: "Name"
-    #   affiliation: "Mechanical Engineering, Kyung Hee University"
-    #   research_interest: "Research interests: TODO"
-    #   image: ""
-    #   email: ""
-    #   links: []
-    #   blurb: ""
+    - name: "Jiseok Choi"
+      affiliation: "MechE, KHU"
+      image: "/img_people/jiseok.jpg"
+      email: "frankj99@khu.ac.kr"
