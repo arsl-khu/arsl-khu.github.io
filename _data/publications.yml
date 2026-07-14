@@ -13,7 +13,7 @@
       #   remark: preprint
       links:
         - name: Paper
-          link: files/2024preprint_hybrid.pdf
+          link: /files/2024preprint_hybrid.pdf
         - name: Video
           link: https://youtu.be/t0-__4vfCNQ
 
@@ -93,7 +93,7 @@
       post:
       links:
         - name: Paper
-          link: files/2024TASE.pdf
+          link: https://doi.org/10.1109/TASE.2024.3409058
         - name: Video
           link: https://www.youtube.com/watch?v=DW7YzORGIg8
 
@@ -120,7 +120,7 @@
       post:
       links:
         - name: Paper
-          link: /files/2024RAM.pdf
+          link: https://ieeexplore.ieee.org/document/10697977
         - name: Video
           link: https://www.youtube.com/watch?v=E4emCP-wNF4
 
@@ -143,7 +143,7 @@
       post:
       links:
         - name: Paper
-          link: files/2024RAL_sj.pdf
+          link: https://doi.org/10.1109/LRA.2024.3416794
         - name: Video
           link: https://www.youtube.com/watch?v=9hvRhZIhFR4
 
@@ -186,7 +186,7 @@
       post:
       links:
         - name: Paper
-          link: files/2024RAL_jh.pdf
+          link: https://doi.org/10.1109/LRA.2024.3382963
         - name: Video
           link: https://www.youtube.com/watch?v=_GPVPd-0jUc
 
@@ -207,7 +207,7 @@
       post:
       links:
         - name: Paper
-          link: files/2023RAL.pdf
+          link: https://doi.org/10.1109/LRA.2023.3300248
         - name: Video
           link: https://www.youtube.com/watch?v=g5yMb22a8Jo
 
@@ -227,7 +227,7 @@
       post:
       links:
         - name: Paper
-          link: files/2022LCSS.pdf
+          link: https://doi.org/10.1109/LCSYS.2022.3184820
         - name: Video
           link: https://www.youtube.com/watch?v=WlClXe3B6fs
 
@@ -251,7 +251,7 @@
       post:
       links:
         - name: Paper
-          link: files/2021RAL.pdf
+          link: https://doi.org/10.1109/LRA.2020.3047779
         - name: Video
           link: https://www.youtube.com/watch?v=htWzBzq9BIs
 
@@ -350,7 +350,7 @@
         abrv: ICUAS
       links:
         - name: Paper
-          link: /files/2024ICUAS.pdf
+          link: https://arxiv.org/abs/2404.11320
 
     - title: Autonomous aerial perching and unperching using omnidirectional tiltrotor and switching controller
       is_first_author: true
@@ -366,7 +366,7 @@
         abrv: ICRA
       links:
         - name: Paper
-          link: /files/2024ICRA.pdf
+          link: https://arxiv.org/abs/2404.11310
         - name: Video
           link: https://www.youtube.com/watch?v=rZFHxuegoT8
 
@@ -382,7 +382,7 @@
         abrv: CDC
       links:
         - name: Paper
-          link: files/2023CDC.pdf
+          link: https://arxiv.org/abs/2308.04087
           
     - title: Minimally actuated tiltrotor for perching and normal force exertion
       is_first_author: true
@@ -398,7 +398,7 @@
         abrv: IROS
       links:
         - name: Paper
-          link: files/2023IROS.pdf
+          link: https://arxiv.org/abs/2306.14425
         - name: Video
           link: https://www.youtube.com/watch?v=hT7qpPF2z9w
 
@@ -414,7 +414,7 @@
         abrv: ICRA
       links:
         - name: Paper
-          link: files/2022ICRA.pdf
+          link: https://ieeexplore.ieee.org/document/10160860
         - name: Video
           link: https://www.youtube.com/watch?v=kfn2C5LIa4M
 
@@ -432,7 +432,7 @@
         abrv: IROS
       links:
         - name: Paper
-          link: files/2021IROS.pdf
+          link: https://arxiv.org/abs/2107.02366
         - name: Video
           link: https://www.youtube.com/watch?v=HAFVdU7jCl8
 
@@ -448,7 +448,7 @@
         abrv: IROS
       links:
         - name: Paper
-          link: files/2021IROS_ik.pdf
+          link: https://arxiv.org/abs/2107.06484
         - name: Video
           link: https://www.youtube.com/watch?v=pqe6jSrH1_w
 
@@ -466,7 +466,7 @@
         abrv: IROS
       links:
         - name: Paper
-          link: files/2021IROS_jh.pdf
+          link: https://arxiv.org/abs/2107.00353
         - name: Video
           link: https://www.youtube.com/watch?v=eQZ1ae-tb7U
 
@@ -482,7 +482,7 @@
       award: ICCAS 2020 Outstanding Paper Award
       links:
         - name: Paper
-          link: files/2020ICCAS_ik.pdf
+          link: https://doi.org/10.23919/ICCAS50221.2020.9268425
 
     - title: Aerial manipulation using model predictive control for opening a hinged door
       is_first_author: true
@@ -497,7 +497,7 @@
         abrv: ICRA
       links:
         - name: Paper
-          link: files/2020ICRA.pdf
+          link: https://arxiv.org/abs/2003.08256
         - name: Video
           link: https://www.youtube.com/watch?v=FepvYNqMWNE
 
