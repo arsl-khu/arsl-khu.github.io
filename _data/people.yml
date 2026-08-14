@@ -3,7 +3,7 @@
   members:
     - name: "Dongjae Lee"
       role: "Assistant Professor"
-      affiliation: "MechE"
+      affiliation: "Mechanical Eng"
       image: "/img_people/dongjae.jpg" # TODO: replace
       website: "https://dongjaelee95.github.io"
       email: "dongjaelee@khu.ac.kr"
@@ -30,6 +30,18 @@
   group_label: "Undergrads"
   members:
     - name: "Jiseok Choi"
-      affiliation: "MechE, KHU"
+      affiliation: "Mechanical Eng, KHU"
       image: "/img_people/jiseok.jpg"
       email: "frankj99@khu.ac.kr"
+    - name: "Byeongju Cha"
+      affiliation: "Mechanical Eng, KHU"
+      image: "/img_people/byeongju.jpg"
+      email: "bjcha01@gmail.com"
+    - name: "Taeyong Lee"
+      affiliation: "Mechanical Eng, KHU"
+      image: "/img_people/default.jpg"
+      email: "lty100000@khu.ac.kr"
+    - name: "Wanjun Kim"
+      affiliation: "SW Convergence, KHU"
+      image: "/img_people/default.jpg"
+      email: "kwj2163@khu.ac.kr"

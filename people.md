@@ -15,7 +15,7 @@ title: People
           {% if p.image and p.image != "" %}
             {% assign person_photo = p.image | relative_url %}
           {% else %}
-            {% assign person_photo = '/assets/img/favicon.svg' | relative_url %}
+            {% assign person_photo = '/img_people/default.jpg' | relative_url %}
           {% endif %}
           <img src="{{ person_photo }}" alt="{{ p.name }}">
 
