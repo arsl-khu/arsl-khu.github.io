@@ -15,4 +15,4 @@ selected_papers: []
 </p>
 
 {% assign publications = site.data.publications %}
-{% include publication-list-dair.html selected_papers=page.selected_papers %}
+{% include publication-list.html selected_papers=page.selected_papers %}

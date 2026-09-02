@@ -12,5 +12,5 @@ title: Domestic Journals
   * indicates equal contribution (co-first authors).
 </p>
 
-{% include publication-list-dair-filtered-by-kind-region.html kind="journal" region="domestic" %}
+{% include publication-list-filtered-by-kind-region.html kind="journal" region="domestic" %}
 

@@ -2,6 +2,31 @@
   classname: p
   publications:
 
+    - title: "AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning"
+      image: "/gif/2026ambench_teaser.gif"
+      is_first_author: true
+      authors:
+        - Y. Wang*
+        - D. Lee*
+        - X. Guo*
+        - Y. Zhan
+        - Y. Jiang
+        - B. Saravanan
+        - M. Cao
+        - J. Xie
+        - C. Mao
+        - S. Scherer
+        - J. Geng
+        - G. Shi
+      year: 2026
+      default:
+        remark: preprint
+      links:
+        - name: Paper
+          link: https://arxiv.org/abs/2609.00641
+        - name: Website
+          link: https://ambench.github.io/
+
     - title: Aerial physical interaction with robust stability guarantee against sudden collision and contact‑loss
       image: "/img_research/tro_hybrid_sub.png"
       is_first_author: true

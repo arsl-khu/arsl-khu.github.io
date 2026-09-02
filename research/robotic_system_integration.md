@@ -14,4 +14,4 @@ selected_papers:
 
 ## Related Publications <small>* equal contribution </small>
 {% assign publications = site.data.publications %}
-{% include publication-list-dair-merged-international-sorted.html selected_papers=page.selected_papers %}
+{% include publication-list-merged-international-sorted.html selected_papers=page.selected_papers %}

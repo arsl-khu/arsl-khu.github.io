@@ -315,7 +315,7 @@ ol.pub>li{
   counter-increment: item;
 }
 
-/* DAIR-like publications */
+/* Publications */
 .pub-section-title{
   margin: 26px 0 10px;
   font-size: 18px;
