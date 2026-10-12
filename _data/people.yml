@@ -20,19 +20,18 @@
 - group: ms
   group_label: "Master Students"
   members:
-    # - name: "Name"
-    #   affiliation: "MechE, KHU"
-    #   image: ""
-    #   website: ""
-    #   email: ""
+    - name: "Jiseok Choi"
+      affiliation: "Security Convergence, KHU (incoming)"
+      image: "/img_people/jiseok.jpg"
+      email: "frankj99@khu.ac.kr"
+    - name: "Jihwan Ryu"
+      affiliation: "Mechanical Eng, KHU (incoming)"
+      image: "/img_people/jihwan.jpg"
+      email: "ruu7571as@khu.ac.kr"
 
 - group: ug
   group_label: "Undergrads"
   members:
-    - name: "Jiseok Choi"
-      affiliation: "Mechanical Eng, KHU"
-      image: "/img_people/jiseok.jpg"
-      email: "frankj99@khu.ac.kr"
     - name: "Byeongju Cha"
       affiliation: "Mechanical Eng, KHU"
       image: "/img_people/byeongju.jpg"

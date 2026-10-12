@@ -38,6 +38,9 @@ title: Home
 
 ## Research highlight
 <div class="highlight-grid">
+  <a class="highlight-item" href="https://fly-by-code.github.io/">
+    <img src="{{ '/gif/2026flybycode_8X.gif' | relative_url }}" alt="Fly-by-Code">
+  </a>
   <a class="highlight-item" href="https://ambench.github.io/">
     <img src="{{ '/gif/2026ambench_teaser.gif' | relative_url }}" alt="Research highlight 1">
   </a>
@@ -59,14 +62,12 @@ title: Home
   <a class="highlight-item" href="https://www.youtube.com/watch?v=E4emCP-wNF4">
     <img src="{{ '/gif/2024RAM_excavator_32X_cprsed.gif' | relative_url }}" alt="Research highlight 7">
   </a>
-  <a class="highlight-item" href="https://www.youtube.com/watch?v=htWzBzq9BIs">
-    <img src="{{ '/gif/2021RAL_pushing_2X_cprsed.gif' | relative_url }}" alt="Research highlight 8">
-  </a>
 </div>
 
 
 ## Recent news
 <ul class="news-list">
+  <li><span class="news-date">[Oct. 2026]</span> New preprint <a href="https://arxiv.org/abs/2610.12549">Fly-by-Code</a> released (<a href="https://fly-by-code.github.io/">project page</a>).</li>
   <li><span class="news-date">[Sep. 2026]</span> One <a href="https://arxiv.org/abs/2609.00641">paper</a> accepted to <a href="https://2026.corl.org/">CoRL</a>.</li>
   <li><span class="news-date">[Jun. 2026]</span> Our <a href="https://arxiv.org/abs/2508.19608">paper</a> featured on the cover of <a href="https://journals.sagepub.com/toc/ijra/45/7">IJRR</a>.</li>
   <li><span class="news-date">[May. 2026]</span> The ARSL website officially started.</li>

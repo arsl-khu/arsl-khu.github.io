@@ -2,6 +2,31 @@
   classname: p
   publications:
 
+    - title: "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback"
+      image: "/gif/2026flybycode_8X.gif"
+      year: 2026
+      authors:
+        - J. Lee*
+        - J. Seo*
+        - S. Cho*
+        - G. Choe
+        - Y. Wang
+        - B. Saravanan
+        - J.-B. Huang
+        - F. Huang
+        - S. Scherer
+        - G. Shi
+        - H. J. Kim
+        - "S. Lee<sup>&dagger;</sup>"
+        - "D. Lee<sup>&dagger;</sup>"
+      default:
+        remark: arXiv preprint
+      links:
+        - name: Paper
+          link: https://arxiv.org/abs/2610.12549
+        - name: Website
+          link: https://fly-by-code.github.io/
+
     - title: Aerial physical interaction with robust stability guarantee against sudden collision and contact‑loss
       image: "/img_research/tro_hybrid_sub.png"
       is_first_author: true

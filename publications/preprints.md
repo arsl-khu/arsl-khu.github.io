@@ -9,7 +9,7 @@ title: Preprints
   <a href="https://scholar.google.com/citations?user=bybQkQEAAAAJ">Google Scholar</a>.
 </p>
 <p class="muted" style="margin-top:-6px;">
-  * indicates equal contribution (co-first authors).
+  * indicates equal contribution (co-first authors). &dagger; indicates project co-leads.
 </p>
 
 {% include publication-list-filtered-by-kind-region.html kind="preprint" %}

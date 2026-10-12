@@ -11,7 +11,7 @@ selected_papers: []
   When available, links point to papers, videos, and project pages.
 </p>
 <p class="muted" style="margin-top:-6px;">
-  * indicates equal contribution (co-first authors).
+  * indicates equal contribution (co-first authors). &dagger; indicates project co-leads.
 </p>
 
 {% assign publications = site.data.publications %}
